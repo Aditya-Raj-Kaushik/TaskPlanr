@@ -38,6 +38,7 @@ const months = [
 ];
 
 
+
 const eventsArr = [];
 getEvents();
 console.log(eventsArr);
@@ -136,7 +137,7 @@ function addListner() {
       days.forEach((day) => {
         day.classList.remove("active");
       });
-      h
+      
       if (e.target.classList.contains("prev-date")) {
         prevMonth();
         
@@ -302,7 +303,7 @@ addEventSubmit.addEventListener("click", () => {
     return;
   }
 
-
+ 
   const timeFromArr = eventTimeFrom.split(":");
   const timeToArr = eventTimeTo.split(":");
   if (
@@ -320,7 +321,7 @@ addEventSubmit.addEventListener("click", () => {
   const timeFrom = convertTime(eventTimeFrom);
   const timeTo = convertTime(eventTimeTo);
 
- 
+
   let eventExist = false;
   eventsArr.forEach((event) => {
     if (
@@ -396,10 +397,8 @@ eventsContainer.addEventListener("click", (e) => {
               event.events.splice(index, 1);
             }
           });
-          
           if (event.events.length === 0) {
             eventsArr.splice(eventsArr.indexOf(event), 1);
-            
             const activeDayEl = document.querySelector(".day.active");
             if (activeDayEl.classList.contains("event")) {
               activeDayEl.classList.remove("event");
@@ -417,9 +416,7 @@ function saveEvents() {
   localStorage.setItem("events", JSON.stringify(eventsArr));
 }
 
-
 function getEvents() {
-  
   if (localStorage.getItem("events") === null) {
     return;
   }
@@ -435,6 +432,4 @@ function convertTime(time) {
   time = timeHour + ":" + timeMin + " " + timeFormat;
   return time;
 }
-
-
    

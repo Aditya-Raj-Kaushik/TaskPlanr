@@ -113,7 +113,7 @@ body {
 }
 .calendar .month .prev:hover,
 .calendar .month .next:hover {
-  color: var(--primary-clr);
+  color: #ffd700;
 }
 
 
@@ -184,8 +184,7 @@ body {
 }
 
 .calendar .days .day:not(.prev-date, .next-date):hover {
-  color: #fff;
-  background-color: var(--primary-clr);
+  border: 2px solid #ffd700;
 }
 
 
@@ -198,8 +197,6 @@ body {
 .calendar .days .active {
   position: relative;
   font-size: 2rem;
-  color: #fff;
-  background-color: var(--primary-clr);
 }
 
 
@@ -210,11 +207,19 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 10px 2px var(--primary-clr);
+  border: 2px solid #ffd700;
+}
+
+
+.selected {
+  border: 1px solid #ffd700;
 }
 
 
 .calendar .days .today {
+  color: #ffd700;
+  border: 2px solid #ffd700;
+  font-weight: 700;
   font-size: 2rem;
 }
 
@@ -474,8 +479,8 @@ body {
 
 
 .add-event:hover {
-  border: 2px solid #4EC9B0;
-  color:  #4EC9B0;
+  border: 2px solid #ffd700;
+  color:  #ffd700;
   opacity: 1;
 }
 
