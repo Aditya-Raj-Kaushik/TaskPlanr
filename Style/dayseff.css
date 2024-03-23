@@ -1,0 +1,31 @@
+.calendar .days .day:not(.prev-date, .next-date):hover {
+    border: 2px solid #ffd700;
+  }
+  
+  
+  .calendar .days .prev-date,
+  .calendar .days .next-date {
+    color: #b3b3b3;
+  }
+  
+  
+  .calendar .days .active {
+    position: relative;
+    font-size: 2rem;
+  }
+  
+  
+  .calendar .days .active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ffd700;
+  }
+  
+  
+  .selected {
+    border: 1px solid #ffd700;
+  }

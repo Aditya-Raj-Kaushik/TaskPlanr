@@ -1,0 +1,7 @@
+
+.calendar .days .today {
+    color: #ffd700;
+    border: 2px solid #ffd700;
+    font-weight: 700;
+    font-size: 2rem;
+  }
