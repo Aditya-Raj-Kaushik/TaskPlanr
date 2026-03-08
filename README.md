@@ -1,87 +1,121 @@
-TaskPlanr
+# TaskPlanr
 
-A simple and intuitive task-management web app built using HTML, CSS, and JavaScript.
-TaskPlanr helps users create, organize, and track daily tasks with an easy-to-use interface and smooth interactions.
+A simple and intuitive **task-management web app** built using **HTML, CSS, and JavaScript**.  
+TaskPlanr helps users **create, organize, and track daily tasks** with an easy-to-use interface and smooth interactions.
 
-✨ Features
-✅ Add & Manage Tasks
+---
 
-Create new tasks instantly
+# ✨ Features
 
-Mark tasks as completed
+## ✅ Add & Manage Tasks
 
-Delete tasks with one tap
+- Create new tasks instantly  
+- Mark tasks as completed  
+- Delete tasks with one click  
 
-🎨 Clean & Modern UI
+## 🎨 Clean & Modern UI
 
-Minimal layout for easy focus
+- Minimal layout for better focus  
+- Styled using custom CSS (located in the **Style/** folder)  
+- Smooth transitions and hover effects  
 
-Styled using custom CSS (located in the Style/ folder)
+## 📦 Local Storage Support
 
-Smooth transitions and hover effects
+- Tasks are saved in your browser  
+- Data persists even after refresh or closing the tab  
 
-📦 Local Storage Support
+## ⚡ Fast & Lightweight
 
-Tasks are saved in your browser
+- Built with **pure HTML, CSS, and JavaScript**  
+- No external frameworks or libraries required  
 
-Data stays even after refresh or closing the tab
+---
 
-⚡ Fast & Lightweight
+# 📁 Project Structure
 
-Pure HTML, CSS, and JavaScript
-
-No external frameworks or libraries needed
-
-📁 Project Structure
+```
 TaskPlanr/
-│── index.html           # Main webpage
-│── script.js            # Task logic + interactions
-│── Style/               # CSS styles & assets
-│── package.json         # Node setup (optional)
-│── package-lock.json
-│── README.md            # Documentation
-│── .gitignore
-│── node_modules/        # If installed (not required for frontend)
-🚀 Getting Started
-1. Clone the repository
+│
+├── index.html           # Main webpage
+├── script.js            # Task logic and interactions
+├── Style/               # CSS styles and assets
+├── package.json         # Node setup (optional)
+├── package-lock.json
+├── README.md            # Project documentation
+├── .gitignore
+└── node_modules/        # If installed (not required for frontend)
+```
+
+---
+
+# 🚀 Getting Started
+
+## 1. Clone the Repository
+
+```
 git clone https://github.com/your-username/TaskPlanr.git
+```
+
+## 2. Navigate to the Project Folder
+
+```
 cd TaskPlanr
-2. Open the app
+```
 
-Simply open index.html in any browser.
+## 3. Open the Application
 
-No installation or build steps required.
+Simply open **index.html** in any web browser.
 
-🧠 How It Works
+No installation or build steps are required.
 
-TaskPlanr uses basic DOM manipulation to create, update, and remove tasks.
-JavaScript stores tasks in localStorage, so your list persists across sessions.
+---
 
-Key functions handled in script.js:
+# 🧠 How It Works
 
-addTask() → adds a new task
+TaskPlanr uses **JavaScript DOM manipulation** to create, update, and remove tasks dynamically.
 
-deleteTask(id) → removes a task
+Tasks are stored using **localStorage**, ensuring your task list persists across sessions.
 
-toggleCompletion(id) → marks a task done/not done
+### Key Functions (script.js)
 
-saveToLocalStorage() → persists data
+```
+addTask() → Adds a new task
 
-📌 Future Enhancements
+deleteTask(id) → Removes a task
 
-Planned improvements:
+toggleCompletion(id) → Marks a task as completed / not completed
 
-Categories / Tags
+saveToLocalStorage() → Stores tasks in the browser
+```
 
-Deadlines & reminders
+---
 
-Drag-and-drop sorting
+# 📌 Future Enhancements
 
-Dark / Light mode
+Planned improvements include:
 
-Cloud sync & multi-device support
+- Categories / Tags for tasks  
+- Deadlines & reminders  
+- Drag-and-drop task sorting  
+- Dark / Light mode  
+- Cloud sync and multi-device support  
 
-🤝 Contributing
+---
+
+# 🤝 Contributing
 
 Pull requests are welcome!
-If you’d like to improve UI, add features, or optimize the code, feel free to open an issue.
+
+If you would like to:
+
+- Improve the UI
+- Add new features
+- Optimize the code
+
+Feel free to **fork the repository and open a pull request**.
+
+---
+
+# 📜 License
+
+This project is **open-source** and available under the **MIT License**.
